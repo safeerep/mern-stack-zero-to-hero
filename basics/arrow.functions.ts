@@ -33,6 +33,7 @@ function normalFunction (name: string) {
 normalFunction("safeer ep")
 
 // 3-hoisting not possible
+
 // hoistingWithArrow() - when we will try to call like this, we will get the following error
 // block-scoped variable 'hoistingWithArrow' used before its declaration.ts(2448)
 // arrowFunctions.ts(40, 7): 'hoistingWithArrow' is declared here.
@@ -49,3 +50,10 @@ function hoistingWithNormalFunction () {
 }
 
 // 4-not usable as constructors
+
+// we can have normal functions as constructor functions like following
+// but not in the case of arrow functions;
+function Person( name: string) {
+    this.name = name;
+}
+const person1 = new Person('safeer')
