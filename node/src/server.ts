@@ -1,6 +1,46 @@
 const http = require('http');
 const url = require('url');
 
+<<<<<<< HEAD
+=======
+// 
+// import fs from 'fs'
+
+// try {
+//     fs.writeFileSync('file.txt', 'helloo safeer')
+//     console.log(`writing successfull`);
+// } catch (error) {
+//     console.log(`an error happened during writing file`);
+// }
+
+// try {
+//     fs.readFile("file.txt", "utf8", (err: any, data: any) => {
+//         if (err) {
+//             throw new Error(err)
+//         } else {
+//             console.log(`read successfull `, data);
+//         }
+//     })
+
+// } catch (error) {
+//     console.log(`err in catch ${error}`);
+// }
+
+// import { spawn } from 'child_process'
+
+// const ls = spawn('ls', ["-l"])
+
+// ls.stdout.on("data", (data) => {
+//     console.log(`std out: `,data);
+// })
+// const userName: string = "safeer"
+// console.log(userName);
+
+
+
+// 
+
+>>>>>>> mongodb
 const server = http.createServer((req, res) => {
 
     const urlToParse: string = req.url || ''
